@@ -1,0 +1,8 @@
+*.aux
+*.out
+*.log
+.texpadtmp
+.DS_Store
+img/*.aux
+img/*.out
+img/*.log

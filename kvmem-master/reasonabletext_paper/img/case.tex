@@ -1,0 +1,41 @@
+\documentclass{standalone}
+%\pdfpagewidth=8.5in
+%\pdfpageheight=11in
+
+%\usepackage{../ijcai20}
+
+\usepackage[OT1]{fontenc} 
+\usepackage{times}
+\usepackage{soul}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[small]{caption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\urlstyle{same}
+
+%for hashline
+\usepackage{arydshln}
+
+
+\begin{document}
+\begin{table}[]
+\begin{tabular}{ll}
+\hline
+\multicolumn{2}{l}{\begin{tabular}[c]{@{}l@{}}\textbf{Query}: … In a company, someone misappropriated 100,000 yuan of \\ public funds, according to Article {[}ARTICLE\_NUMBER{]} of the {[}LAW{]} ...\end{tabular}}                                                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{2}{l}{\begin{tabular}[c]{@{}l@{}}\textbf{Answer}: {[}ARTICLE\_NUMBER{]} = 272, \\ {[}LAW{]} = Criminal Law of the People's Republic of China\end{tabular}}                                                                                                                                                                                                                                                                                                                                \\ \hline \hline
+\multicolumn{2}{c}{Related Keys \& Values in Legal Knowledge Base}                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hdashline
+\begin{tabular}[c]{@{}l@{}}Key(1): Criminal \\ Law of the \\ People's Republic \\ of China, \\ Article 185\end{tabular} & \begin{tabular}[c]{@{}l@{}}Value(1): Personnel of banks or other monetary \\ institutions who take advantage of their office to \\ misappropriate funds of their respective institutions \\ or customers are to be sentenced and punished in \\ accordance with the stipulations of Article \\ 272 of this law…\end{tabular}                                      \\ \hdashline
+Key (2): Value (1)                                                                                                         & Value (2): Key (1)                                                                                                                                                                                                                                                                                                                                             \\ \hdashline
+\begin{tabular}[c]{@{}l@{}}Key(3): Criminal \\ Law of the \\ People's Republic \\ of China, \\ Article 272\end{tabular} & \begin{tabular}[c]{@{}l@{}}Value(3): When personnel of companies, \\ enterprises, and other units, who take advantage \\ of their offices to misappropriate their units' \\ funds for their own use or for lending to others, \\ and the amounts involved are relatively large \\ and have not been returned for a period of over \\ three months; …\end{tabular} \\ \hdashline
+Key (4): Value (3)                                                                                                         & Value (4): Key (3) \\ \hdashline                                                                                                                                                                                                                                                                                                                                      
+\multicolumn{2}{c}{etc.}                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline \hline
+\multicolumn{2}{l}{\begin{tabular}[c]{@{}l@{}}\textbf{Candidate Answers}: \\ Criminal Law of the People's Republic of China, Article 185;\\ Criminal Law of the People's Republic of China, Article 272;\\ etc.\end{tabular}}  \\ \hline                                                                                                                                                                                                                                                                                    
+\end{tabular}
+\end{table}
+\end{document}
